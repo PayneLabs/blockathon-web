@@ -1,3 +1,4 @@
 tmp
 storage
 db/migrate
+Gemfile.lock
