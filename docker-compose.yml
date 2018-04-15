@@ -10,14 +10,24 @@ services:
   web:
     build: .
     command: bundle exec puma -C config/puma.rb
-    container_name: camaleon
+    container_name: webapp
     environment:
       SECRET_KEY_BASE: abcdefg
       VIRTUAL_HOST: blockchain.paynelabs.io #change to meet your needs
       DB_MYSQL_ROOT_PASSWORD: mypass #change for production safety
       DB_MYSQL_HOST: db
       DB_DATABASE_NAME: blockathondb
+      LETSENCRYPT_HOST: blockchain.paynelabs.io
+      LETSENCRYPT_EMAIL: blockchain.paynelabs.io 
     links:
       - db
     volumes:
       - ./log:/usr/camaleon/log:rw
+
+networks:
+  default:
+    external:
+      name: ${NETWORK:-webproxy}
+  outside:
+    external:
+      name: ${SERVICE_NETWORK:-webservices}
