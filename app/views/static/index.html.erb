@@ -1,0 +1,121 @@
+<!-- Header -->
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <%= image_tag("logospin.gif", class: "img-fluid mb-5 d-block mx-auto", height: "250", width: "250", alt: "DAT LOGO") %>
+        <h1 class="text-uppercase mb-0">Accountable.</h1>
+        <h1 class="text-uppercase mb-0">Distributed.</h1>
+        <h1 class="text-uppercase mb-0">Secure.</h1>
+        <hr class="star-light">
+        <h2 class="font-weight-light mb-0">Much Security. Such Distribution. To The Moon.</h2>
+      </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Services</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-sm-4">
+            <a class="services-item d-block mx-auto">
+              <%= image_tag("services/block.jpg", class: "img-fluid") %>
+            </a>
+          </div>
+          <div class="col-sm-8">
+            <h2 class="font-weight-medium mb-4">Much Security.</h2>
+            <h3 class="font-weight-light mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel consectetur libero, in dapibus augue. Vivamus suscipit at sem sed lacinia. Nam volutpat vehicula neque, sed sollicitudin enim accumsan a. Sed ac maximus nisi.</h3>
+          </div>
+
+          <div class="col-sm-4">
+            <a class="services-item d-block mx-auto">
+              <%= image_tag("services/timestamp.jpg", class: "img-fluid") %>
+            </a>
+          </div>
+          <div class="col-sm-8">
+            <h2 class="font-weight-medium mb-4">Much Security.</h2>
+            <h3 class="font-weight-light mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel consectetur libero, in dapibus augue. Vivamus suscipit at sem sed lacinia. Nam volutpat vehicula neque, sed sollicitudin enim accumsan a. Sed ac maximus nisi.</h3>
+          </div>
+
+          <div class="col-sm-4">
+            <a class="services-item d-block mx-auto">
+              <%= image_tag("services/ledger.jpg", class: "img-fluid") %>
+            </a>
+          </div>
+          <div class="col-sm-8">
+            <h2 class="font-weight-medium mb-4">Much Security.</h2>
+            <h3 class="font-weight-light mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel consectetur libero, in dapibus augue. Vivamus suscipit at sem sed lacinia. Nam volutpat vehicula neque, sed sollicitudin enim accumsan a. Sed ac maximus nisi.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-primary text-white mb-0" id="about">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white">About</h2>
+        <hr class="star-light mb-5">
+        <div class="row">
+          <div class="col-lg-4 ml-auto">
+            <p class="lead">Providing today's successful enterprises the framework for streamlining process and maximizing success, Validity is the cornerstone in modern audit substantive testing.</p>
+          </div>
+          <div class="col-lg-4 mr-auto">
+            <p class="lead">Create flexible new workflows or confirm current process and procedure against the decentralized blockchain, all while minimizing administrative costs and data risk to existing file stores.</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Contact Us</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Name</label>
+                  <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Email Address</label>
+                  <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Phone Number</label>
+                  <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <br>
+              <div id="success"></div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>

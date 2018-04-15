@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<header class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <div class="text-center mt-4">
+        	<h1>Document</h1>
+
+<p>
+  <strong>Name:</strong>
+  <%= @document.name %>
+</p>
+
+<p>
+  <strong>IPFS URL:</strong>
+  <%= @document.ipfs_url %>
+</p>
+<p>
+<%= link_to "Click Here to Preview Document", url_for(@document.doc), class: "text-white" %>
+       </p> 
+        </div>
+
+      </div>
+    </header>
