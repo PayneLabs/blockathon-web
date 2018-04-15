@@ -17,8 +17,12 @@
   <%= @document.ipfs_url %>
 </p>
 <p>
+  <strong>Hash Address on Blockchain:</strong>
+  <%= @document.ipfs_url_hash %>
+</p>
+<p>
 <%= link_to "Click Here to Preview Document", url_for(@document.doc), class: "text-white" %>
-       </p> 
+       </p>
         </div>
 
       </div>

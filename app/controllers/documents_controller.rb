@@ -43,6 +43,7 @@ class DocumentsController < ApplicationController
 # @document.ipfs_url = res
 
 @document.ipfs_url = SecureRandom.base58(24)
+@document.ipfs_url_hash = "0x"+SecureRandom.hex(40)
 
     respond_to do |format|
       if @document.save
